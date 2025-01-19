@@ -8,7 +8,7 @@ for k, v in ipairs(Config.SafeZones) do
             Notify('Beléptél egy védett zónába', 'top', 'success')
         end,
         onExit = function ()
-            SetLocalPlayerAsGhost(true)
+            SetLocalPlayerAsGhost(false)
             Notify('Kiléptél egy védett zónábol', 'top', 'error')
         end
     })
